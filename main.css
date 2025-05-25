@@ -1,29 +1,59 @@
-
-body{
-    background-color: #222831;
+body {
+  background-color: #222831;
+  color: #fff;
 }
-main{
-    background-color: #393E46;
-    border: 1px solid rgb(80, 75, 75);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    width: 90%;
-    min-height: 100vh;
+main {
+  background-color: #393e46;
+  border: 1px solid rgb(80, 75, 75);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  min-height: 100vh;
 }
-.container-collections{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .5rem;
-    border-bottom: 1px solid gray;
-    padding-bottom: .25rem;
+#container-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
-.container-collections img{
-    max-width: 100px;
-    max-height: 200px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+.container-collections,
+.container-stacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.25rem;
+}
+.container-collections img,
+.container-stacks img {
+  width: 100px;
+  height: 150px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  cursor: pointer;
+}
+.drag-start {
+  border: 1px dashed gold;
+  border-radius: auto;
+}
+#game-score {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  color: green;
+  font-size: 4rem;
+  border: 2px solid gold;
+}
+.drag-over{
+  border: 1px solid green;
 }
