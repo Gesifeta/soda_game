@@ -13,6 +13,11 @@ main {
   width: 90%;
   min-height: 100vh;
 }
+h1{
+  border-bottom: 2rem solid #fff ;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
 #container-game {
   display: flex;
   justify-content: center;
@@ -27,7 +32,14 @@ main {
   justify-content: center;
   gap: 1rem;
   border-bottom: 1px solid gray;
+
   padding-bottom: 0.25rem;
+  padding: 2rem;
+}
+.container-collections img:hover{
+  cursor: pointer;
+  transform: scale(1.123);
+  border: 1px solid red;
 }
 .container-collections img,
 .container-stacks img {
@@ -48,11 +60,25 @@ main {
   align-items: center;
   padding: 1rem;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
   color: green;
   font-size: 4rem;
   border: 2px solid gold;
+}
+#container-score{
+  display: flex;
+  color: gray;
+  gap: 1rem;
+}
+#prize{
+  font-size: 3rem;
+  align-items: center;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
 }
 .drag-over{
   border: 1px solid green;
